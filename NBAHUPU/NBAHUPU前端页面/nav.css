@@ -1,0 +1,37 @@
+.HP_nav{
+    height: 100px;
+    border-bottom: none;
+    background-color: transparent;
+}
+.HP_nav .navbar-header .navbar-brand{
+    /*color: #777777;*/
+    /*font-size: 50px;*/
+    height: 100px;
+    line-height: 100px;
+    padding-top: 20px;
+}
+.HP_nav .navbar-brand img{
+    width: 210px;
+    height: 80px;
+}
+
+.HP_nav .navbar-nav{
+    font-size: 15px;
+}
+.HP_nav .navbar-nav a{
+    height: 100px;
+    line-height: 100px;
+    padding-top: 0px;
+    color: #666;
+}
+.HP_nav .navbar-nav li a:hover{
+    color:#666;
+    border-bottom: 2px solid red;
+}
+.HP_nav .navbar-nav .active a{
+    background-color: transparent;
+    border-bottom: 2px solid red;
+}
+.HP_nav .navbar-nav .active a:hover{
+    background-color: transparent;
+}

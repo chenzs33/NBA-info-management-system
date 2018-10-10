@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>NBA|HUPU球员后台信息管理系统登录页面</title>
+    <link href="css/userlogin.css" rel="stylesheet" />
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" media="screen" />
+    <script type="text/javascript">
+        function changeVcode() {
+            //获取图文验证码对象
+            var obj = document.getElementById("vcodeimg");
+            //指定src属性，继续指向一般处理程序
+            //因为浏览器是有缓存机制的，所以需要添加一个随机值
+            obj.src = "ValidateCode.ashx?" + Math.random();
+        }
+    </script>
+</head>
+<body>
+    <form action="Login.ashx" method="post">
+        <div class="logo"></div>
+        <div id="mainContent">
+            <table class="logintb" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td style="height: 65px; text-align: center; color: #014477; font-size: 20px; font-family: 微软雅黑;" colspan="2">
+                    </td>                    
+                </tr>
+                <tr>
+                    <th>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        用户名:
+                    </th>
+                    <td>
+                        <input type="text" style="border-radius:10px;" class="inpt" name="username" value="Zesen" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        密码:
+                    </th>
+                    <td>
+                        <input type="password" style="border-radius:10px;" class="inpt" name="userpwd" value="123456" />
+
+                    </td>
+                </tr>
+                <tr>
+                    <th>验证码：</th>
+                    <td>
+                        <input type="text" style="border-radius:10px;" id="vcode" name="vcode" />
+                        <img id="vcodeimg" src="ValidateCode.ashx" style="vertical-align: middle; cursor:no-drop" onclick="changeVcode()" />
+                    </td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td>
+                        <input type="checkbox" name="isremember" />是否记住登录信息
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <img id="btnLogin" src="/images/login_bt.png" onclick="submit()" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="height: 20px"></td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>

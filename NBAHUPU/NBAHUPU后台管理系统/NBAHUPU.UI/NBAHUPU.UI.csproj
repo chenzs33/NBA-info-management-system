@@ -1,0 +1,391 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C7365F1D-E131-4072-84C4-81C198F88125}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NBAHUPU.UI</RootNamespace>
+    <AssemblyName>NBAHUPU.UI</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <ApplicationInsightsResourceId />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AspNetPager, Version=7.3.2.0, Culture=neutral, PublicKeyToken=fb0a0fe055d40fd4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>G:\ASP.NET动态网页设计\Examples\(17.12.19)分页-StudentList\AspNetPager.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AssociationAdd.aspx" />
+    <Content Include="AssociationEdit.aspx" />
+    <Content Include="AssociationList.aspx" />
+    <Content Include="css\images\error.png" />
+    <Content Include="css\images\ml1.jpg" />
+    <Content Include="css\images\ml2.jpg" />
+    <Content Include="css\images\msd.jpg" />
+    <Content Include="css\images\NBAHPlogo.png" />
+    <Content Include="css\images\onLoad.gif" />
+    <Content Include="css\images\right.png" />
+    <Content Include="css\images\skin_icons.png" />
+    <Content Include="css\images\topbg.jpg" />
+    <Content Include="css\images\verMenuImages.png" />
+    <Content Include="css\index.css" />
+    <Content Include="css\Site.css" />
+    <Content Include="css\userlogin.css" />
+    <Content Include="css\Validform.css" />
+    <Content Include="DivisionAdd.aspx" />
+    <Content Include="DivisionEdit.aspx" />
+    <Content Include="DivisionList.aspx" />
+    <Content Include="images\login_bg.png" />
+    <Content Include="images\login_bt.png" />
+    <Content Include="images\Logo.png" />
+    <Content Include="images\ml1.jpg" />
+    <Content Include="images\ml2.jpg" />
+    <Content Include="images\msd.jpg" />
+    <Content Include="images\NBAHPlogo.png" />
+    <Content Include="images\systemname.png" />
+    <Content Include="images\titlebg.jpg" />
+    <Content Include="images\topbg.jpg" />
+    <Content Include="images\verMenuImages.png" />
+    <Content Include="Index.aspx" />
+    <Content Include="Login.html" />
+    <Content Include="PlayerAdd.aspx" />
+    <Content Include="scripts\jquery-1.9.1.js" />
+    <Content Include="scripts\My97DatePicker\calendar.js" />
+    <Content Include="scripts\My97DatePicker\config.js" />
+    <Content Include="scripts\My97DatePicker\lang\en-us.js" />
+    <Content Include="scripts\My97DatePicker\lang\zh-cn.js" />
+    <Content Include="scripts\My97DatePicker\lang\zh-tw.js" />
+    <Content Include="scripts\My97DatePicker\My97DatePicker.htm" />
+    <Content Include="scripts\My97DatePicker\skin\datePicker.gif" />
+    <Content Include="scripts\My97DatePicker\skin\datePicker1.gif" />
+    <Content Include="scripts\My97DatePicker\skin\default\datepicker.css" />
+    <Content Include="scripts\My97DatePicker\skin\default\img - 复制 %282%29.gif" />
+    <Content Include="scripts\My97DatePicker\skin\default\img - 复制.gif" />
+    <Content Include="scripts\My97DatePicker\skin\default\img.gif" />
+    <Content Include="scripts\My97DatePicker\skin\WdatePicker.css" />
+    <Content Include="scripts\My97DatePicker\skin\whyGreen\bg.jpg" />
+    <Content Include="scripts\My97DatePicker\skin\whyGreen\datepicker.css" />
+    <Content Include="scripts\My97DatePicker\skin\whyGreen\img - 复制.gif" />
+    <Content Include="scripts\My97DatePicker\skin\whyGreen\img.gif" />
+    <Content Include="scripts\My97DatePicker\WdatePicker.js" />
+    <Content Include="scripts\Validform_v5.3.2.js" />
+    <Content Include="PlayerList.aspx" />
+    <Content Include="TeamAdd.aspx" />
+    <Content Include="TeamEdit.aspx" />
+    <Content Include="TeamList.aspx" />
+    <Content Include="UsersAdd.aspx" />
+    <Content Include="UsersEdit.aspx" />
+    <Content Include="UsersList.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="AssociationAdd.aspx.cs">
+      <DependentUpon>AssociationAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AssociationAdd.aspx.designer.cs">
+      <DependentUpon>AssociationAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AssociationDelete.ashx.cs">
+      <DependentUpon>AssociationDelete.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="AssociationEdit.aspx.cs">
+      <DependentUpon>AssociationEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AssociationEdit.aspx.designer.cs">
+      <DependentUpon>AssociationEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AssociationList.aspx.cs">
+      <DependentUpon>AssociationList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AssociationList.aspx.designer.cs">
+      <DependentUpon>AssociationList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="common\Kits.cs" />
+    <Compile Include="DivisionAdd.aspx.cs">
+      <DependentUpon>DivisionAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DivisionAdd.aspx.designer.cs">
+      <DependentUpon>DivisionAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DivisionDelete.ashx.cs">
+      <DependentUpon>DivisionDelete.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="DivisionEdit.aspx.cs">
+      <DependentUpon>DivisionEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DivisionEdit.aspx.designer.cs">
+      <DependentUpon>DivisionEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DivisionList.aspx.cs">
+      <DependentUpon>DivisionList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DivisionList.aspx.designer.cs">
+      <DependentUpon>DivisionList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.ashx.cs">
+      <DependentUpon>Login.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Logout.ashx.cs">
+      <DependentUpon>Logout.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="PlayerAdd.aspx.cs">
+      <DependentUpon>PlayerAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PlayerAdd.aspx.designer.cs">
+      <DependentUpon>PlayerAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PlayerDelete.ashx.cs">
+      <DependentUpon>PlayerDelete.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PlayerList.aspx.cs">
+      <DependentUpon>PlayerList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PlayerList.aspx.designer.cs">
+      <DependentUpon>PlayerList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TeamAdd.aspx.cs">
+      <DependentUpon>TeamAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TeamAdd.aspx.designer.cs">
+      <DependentUpon>TeamAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TeamDelete.ashx.cs">
+      <DependentUpon>TeamDelete.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="TeamEdit.aspx.cs">
+      <DependentUpon>TeamEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TeamEdit.aspx.designer.cs">
+      <DependentUpon>TeamEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TeamList.aspx.cs">
+      <DependentUpon>TeamList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TeamList.aspx.designer.cs">
+      <DependentUpon>TeamList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UsersAdd.aspx.cs">
+      <DependentUpon>UsersAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UsersAdd.aspx.designer.cs">
+      <DependentUpon>UsersAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UsersDelete.ashx.cs">
+      <DependentUpon>UsersDelete.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="UsersEdit.aspx.cs">
+      <DependentUpon>UsersEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UsersEdit.aspx.designer.cs">
+      <DependentUpon>UsersEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UsersList.aspx.cs">
+      <DependentUpon>UsersList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UsersList.aspx.designer.cs">
+      <DependentUpon>UsersList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ValidateCode.ashx.cs">
+      <DependentUpon>ValidateCode.ashx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin.Master" />
+    <Content Include="Login.ashx" />
+    <Content Include="Logout.ashx" />
+    <Content Include="UsersDelete.ashx" />
+    <Content Include="ValidateCode.ashx" />
+    <Content Include="scripts\My97DatePicker\.svn\all-wcprops" />
+    <Content Include="scripts\My97DatePicker\.svn\entries" />
+    <Content Include="scripts\My97DatePicker\.svn\text-base\calendar.js.svn-base" />
+    <Content Include="scripts\My97DatePicker\.svn\text-base\config.js.svn-base" />
+    <Content Include="scripts\My97DatePicker\.svn\text-base\My97DatePicker.htm.svn-base" />
+    <Content Include="scripts\My97DatePicker\.svn\text-base\WdatePicker.js.svn-base" />
+    <Content Include="scripts\My97DatePicker\lang\.svn\all-wcprops" />
+    <Content Include="scripts\My97DatePicker\lang\.svn\entries" />
+    <Content Include="scripts\My97DatePicker\lang\.svn\text-base\en-us.js.svn-base" />
+    <Content Include="scripts\My97DatePicker\lang\.svn\text-base\zh-cn.js.svn-base" />
+    <Content Include="scripts\My97DatePicker\lang\.svn\text-base\zh-tw.js.svn-base" />
+    <Content Include="scripts\My97DatePicker\skin\.svn\all-wcprops" />
+    <Content Include="scripts\My97DatePicker\skin\.svn\entries" />
+    <Content Include="scripts\My97DatePicker\skin\.svn\prop-base\datePicker.gif.svn-base" />
+    <Content Include="scripts\My97DatePicker\skin\.svn\prop-base\datePicker1.gif.svn-base" />
+    <Content Include="scripts\My97DatePicker\skin\.svn\text-base\datePicker.gif.svn-base" />
+    <Content Include="scripts\My97DatePicker\skin\.svn\text-base\datePicker1.gif.svn-base" />
+    <Content Include="scripts\My97DatePicker\skin\.svn\text-base\WdatePicker.css.svn-base" />
+    <Content Include="scripts\My97DatePicker\skin\default\.svn\all-wcprops" />
+    <Content Include="scripts\My97DatePicker\skin\default\.svn\entries" />
+    <Content Include="scripts\My97DatePicker\skin\default\.svn\prop-base\img - 复制 %282%29.gif.svn-base" />
+    <Content Include="scripts\My97DatePicker\skin\default\.svn\prop-base\img - 复制.gif.svn-base" />
+    <Content Include="scripts\My97DatePicker\skin\default\.svn\prop-base\img.gif.svn-base" />
+    <Content Include="scripts\My97DatePicker\skin\default\.svn\text-base\datepicker.css.svn-base" />
+    <Content Include="scripts\My97DatePicker\skin\default\.svn\text-base\img - 复制 %282%29.gif.svn-base" />
+    <Content Include="scripts\My97DatePicker\skin\default\.svn\text-base\img - 复制.gif.svn-base" />
+    <Content Include="scripts\My97DatePicker\skin\default\.svn\text-base\img.gif.svn-base" />
+    <Content Include="scripts\My97DatePicker\skin\whyGreen\.svn\all-wcprops" />
+    <Content Include="scripts\My97DatePicker\skin\whyGreen\.svn\entries" />
+    <Content Include="scripts\My97DatePicker\skin\whyGreen\.svn\prop-base\bg.jpg.svn-base" />
+    <Content Include="scripts\My97DatePicker\skin\whyGreen\.svn\prop-base\img - 复制.gif.svn-base" />
+    <Content Include="scripts\My97DatePicker\skin\whyGreen\.svn\prop-base\img.gif.svn-base" />
+    <Content Include="scripts\My97DatePicker\skin\whyGreen\.svn\text-base\bg.jpg.svn-base" />
+    <Content Include="scripts\My97DatePicker\skin\whyGreen\.svn\text-base\datepicker.css.svn-base" />
+    <Content Include="scripts\My97DatePicker\skin\whyGreen\.svn\text-base\img - 复制.gif.svn-base" />
+    <Content Include="scripts\My97DatePicker\skin\whyGreen\.svn\text-base\img.gif.svn-base" />
+    <Content Include="AssociationDelete.ashx" />
+    <Content Include="DivisionDelete.ashx" />
+    <Content Include="TeamDelete.ashx" />
+    <Content Include="PlayerDelete.ashx" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NBAHUPU.BLL\NBAHUPU.BLL.csproj">
+      <Project>{629813f5-175c-4283-897f-b3fc8014b470}</Project>
+      <Name>NBAHUPU.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NBAHUPU.Model\NBAHUPU.Model.csproj">
+      <Project>{42237c4c-d819-4982-ac2e-8a618acce883}</Project>
+      <Name>NBAHUPU.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="photos\" />
+    <Folder Include="scripts\My97DatePicker\.svn\prop-base\" />
+    <Folder Include="scripts\My97DatePicker\.svn\props\" />
+    <Folder Include="scripts\My97DatePicker\.svn\tmp\prop-base\" />
+    <Folder Include="scripts\My97DatePicker\.svn\tmp\props\" />
+    <Folder Include="scripts\My97DatePicker\.svn\tmp\text-base\" />
+    <Folder Include="scripts\My97DatePicker\lang\.svn\prop-base\" />
+    <Folder Include="scripts\My97DatePicker\lang\.svn\props\" />
+    <Folder Include="scripts\My97DatePicker\lang\.svn\tmp\prop-base\" />
+    <Folder Include="scripts\My97DatePicker\lang\.svn\tmp\props\" />
+    <Folder Include="scripts\My97DatePicker\lang\.svn\tmp\text-base\" />
+    <Folder Include="scripts\My97DatePicker\skin\.svn\props\" />
+    <Folder Include="scripts\My97DatePicker\skin\.svn\tmp\prop-base\" />
+    <Folder Include="scripts\My97DatePicker\skin\.svn\tmp\props\" />
+    <Folder Include="scripts\My97DatePicker\skin\.svn\tmp\text-base\" />
+    <Folder Include="scripts\My97DatePicker\skin\default\.svn\props\" />
+    <Folder Include="scripts\My97DatePicker\skin\default\.svn\tmp\prop-base\" />
+    <Folder Include="scripts\My97DatePicker\skin\default\.svn\tmp\props\" />
+    <Folder Include="scripts\My97DatePicker\skin\default\.svn\tmp\text-base\" />
+    <Folder Include="scripts\My97DatePicker\skin\whyGreen\.svn\props\" />
+    <Folder Include="scripts\My97DatePicker\skin\whyGreen\.svn\tmp\prop-base\" />
+    <Folder Include="scripts\My97DatePicker\skin\whyGreen\.svn\tmp\props\" />
+    <Folder Include="scripts\My97DatePicker\skin\whyGreen\.svn\tmp\text-base\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>30965</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:30965/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

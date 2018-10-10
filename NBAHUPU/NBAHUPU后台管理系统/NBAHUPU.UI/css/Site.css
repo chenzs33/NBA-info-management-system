@@ -1,0 +1,378 @@
+﻿
+body {
+    height: 100%;
+    background-color: #808080;
+    background:url("../images/bg.jpg");
+    font-size: 75%;
+    font-family: Verdana, Tahoma, Arial, "Helvetica Neue", Helvetica, Sans-Serif;
+    margin: 0;
+    padding: 0;
+    color: #000000; /*#696969;*/
+}
+
+html {
+    height: 100%;
+}
+
+#top {
+    background: #e4e4e4 url('/images/topbg.jpg') repeat-x;
+}
+
+.page {
+    width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.menu {
+    margin: 0;
+    padding: 0;
+    width: 180px;
+    list-style: none;
+    overflow-y: hidden;
+    height: 600px;
+    overflow-x: hidden;
+    border-right: 1px solid #D8D8D8;
+}
+
+    .menu li {
+        padding: 0;
+        margin: 0 0 1px 0;
+        height: 27px;
+        display: block;
+    }
+
+        .menu li a.active, .menu li a.active:hover {
+            background: url('/images/verMenuImages.png') 0px -80px no-repeat;
+            color: rgb(255,255,255);
+        }
+
+        .menu li a span {
+            line-height: 27px;
+        }
+
+        .menu li.L1 {
+            height: 27px;
+            padding: 5px 0 0 45px;
+            color: #585858;
+            font-weight: bold;
+            display: block;
+            background: url('/images/ml1.jpg') repeat-x;
+            text-decoration: none;
+            outline: none;
+        }
+
+        .menu li.L2 a {
+            height: 27px;
+            padding: 5px 0 0 60px;
+            color: #585858;
+            display: block;
+            background: url('/images/ml2.jpg') repeat-x;
+            text-decoration: none;
+            outline: none;
+        }
+
+            .menu li.L2 a:hover {
+                background: url('/images/msd.jpg') repeat-x;
+                color: #000;
+            }
+
+        .menu li.selected a {
+            background: url('/images/msd.jpg') repeat-x;
+            color: #000;
+        }
+
+a:link {
+    color: #034af3;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #505abc;
+}
+
+a:hover {
+    color: #1d60ff;
+    text-decoration: none;
+}
+
+a:active {
+    color: #12eb87;
+}
+
+p, ul {
+    margin-bottom: 20px;
+    line-height: 1.6em;
+}
+
+/* HEADINGS   
+----------------------------------------------------------*/
+
+
+#main {
+    background-color: #f1f1f1;
+    _height: 1px; /* only IE6 applies CSS properties starting with an underscore */
+    height: 100%;
+}
+
+#footer {
+    padding: 0 10px 0 0;
+}
+
+fieldset {
+    border: 1px solid #ddd;
+    margin: 0 1.5em 1.5em 0;
+}
+
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+textarea {
+    min-height: 75px;
+}
+
+input[type="text"] {
+    width: 200px;
+    border: 1px solid #CCC;
+}
+
+input[type="password"] {
+    width: 200px;
+    border: 1px solid #CCC;
+}
+
+/* TABLE
+----------------------------------------------------------*/
+
+.listtb {
+    border: solid 1px #696969;
+    border-collapse: collapse;
+    width: 100%;
+    margin-right: 15px;
+}
+
+    .listtb td {
+        padding: 5px;
+        border: solid 1px #696969;
+        background-color: #ffffff;
+        color: #333333;
+        text-align: center;
+    }
+
+    .listtb th {
+        padding: 6px 5px;
+        text-align: left;
+        background-color: #cccccc;
+        border: solid 1px #696969;
+        color: #333333;
+        text-align: center;
+        /*width: 20%;*/
+    }
+
+/* MISC  
+----------------------------------------------------------*/
+.clear {
+    clear: both;
+}
+
+.error {
+    color: Red;
+}
+
+
+
+div#title {
+    display: block;
+    float: left;
+    text-align: left;
+}
+
+#logindisplay {
+    font-size: 1.1em;
+    display: block;
+    text-align: right;
+    margin: 10px;
+    color: White;
+}
+
+    #logindisplay a:link {
+        color: white;
+        text-decoration: underline;
+    }
+
+    #logindisplay a:visited {
+        color: white;
+        text-decoration: underline;
+    }
+
+    #logindisplay a:hover {
+        color: white;
+        text-decoration: none;
+    }
+
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error {
+    color: #ff0000;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+.input-validation-error {
+    border: 1px solid #ff0000;
+    background-color: #ffeeee;
+}
+
+.validation-summary-errors {
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+/* Styles for editor and display helpers
+----------------------------------------------------------*/
+.display-label, .editor-label {
+    margin: 1em 0 0 0;
+}
+
+.display-field, .editor-field {
+    margin: 0.5em 0 0 0;
+}
+
+.text-box {
+    width: 30em;
+}
+
+    .text-box.multi-line {
+        height: 6.5em;
+    }
+
+.tri-state {
+    width: 6em;
+}
+
+#listnodata {
+    font-size: 14px;
+    color: Red;
+    text-align: center;
+}
+
+.titlebar {
+    background: #e9effb url("images/titlebg.jpg") repeat-x;
+    width: 100%;
+    height: 26px;
+}
+
+    .titlebar div {
+        color: #696969;
+        padding: 3px 0 0 10px;
+        font-weight: bold;
+        vertical-align: central;
+    }
+
+.newbt, .list, .addedit {
+    padding: 8px 8px 0 16px;
+}
+
+.addedittb th {
+    font-weight: normal;
+    text-align: right;
+}
+
+/*用户列表窗体的工具栏*/
+.toolbox {
+    width: 100%;
+    height: 26px;
+}
+
+    .toolbox div {
+        color: #696969;
+        padding: 0px 3px 0 10px;
+        font-weight: bold;
+        vertical-align: central;
+        float: left;       
+    }
+  
+
+/*分页控件样式*/
+.pages {
+    color: red;
+    font-weight: bold;
+    font-size: 12px;
+    height: 20px;
+    padding: 15px 0 0 0;
+    margin-right: 20px;
+}
+
+    .pages .item {
+        padding: 1px 1px;
+        font-size: 13px;
+    }
+    /*数字页索引样式*/
+    .pages .cpb {
+        background-color: #ff8800;
+        color: #fff;
+        padding: 1px 6px;
+        font-size: 13px;
+    }
+    /*当前页样式*/
+    .pages a {
+        text-decoration: none;
+        padding: 0 5px;
+        border: 1px solid #ddd;
+        margin: 0 2px;
+        color: #000;
+        font-weight: normal;
+    }
+
+        .pages a:hover {
+            background-color: #ff8800;
+            color: #fff;
+            text-decoration: none;
+            font-weight: normal;
+        }
+
+#pager {
+    text-align: right;
+    background-color: #fff;
+    padding: 0px;
+    margin: 0px;
+}
+
+.red {
+    color: Red;
+}
+
+.blue {
+    color: Blue;
+}
+
+
+.w400 input {
+    width: 400px;
+}
+
+.s {
+    min-height: 50px;
+    height: 50px;
+    overflow: auto;
+}
+
+a.curselectd {
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 0 5px 0 5px;
+}
+
+#edit, #upload {
+    display: none;
+}

@@ -1,0 +1,82 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="NBAHUPU.UI.Admin" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />    
+    <!--引用css样式-->
+    <link href="/css/Site.css" rel="stylesheet" /> 
+    <link rel="shortcut icon"type="image/x-icon" href="images/favicon.ico"media="screen" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="page" style="height: 100%;">
+            <table style="height: 100%; width: 100%;" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td colspan="2" style="height: 15px;"></td>
+                </tr>
+                <tr>
+                    <td id="top" colspan="2" style="height: 77px;">
+                        <table style="height: 100%; width: 100%; border: 0" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td style="width: 200px; text-align: center;">
+                                    <img width="200" height="60" src="/images/NBAHPlogo.png" alt="logo" style="padding-left:50px;"/>
+                                </td>
+                                <td>
+                                    <p alt="sname" style="font-size:20px; color:dimgray; font-weight:bold;"/>后台管理信息系统</p>
+                                </td>
+                                <td style="vertical-align: top; text-align: right">
+                                    <div style="margin: 10px 20px 0 0;">
+                                        <div>
+                                            &nbsp;
+                                        </div>
+                                        <div style="margin: 10px 0 0;">
+                                            欢迎【<%=loginUser%>】登录 
+                                        <span style="padding: 0 0 0 10px;">
+                                            <a href="Logout.ashx">退出 </a>
+                                        </span>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="mtd" style="width: 180px; vertical-align: top; background-color: #f1f1f1">
+                        <ul class="menu">
+                            <li class="L1">系统管理  </li>
+                            <li class="L2"><a href="UsersList.aspx">用户管理</a></li>
+                            <li class="L1">基础信息</li>
+                            <li class="L2"><a href="AssociationList.aspx">联盟信息设置</a></li>
+                            <li class="L2"><a href="DivisionList.aspx">赛区信息设置</a></li>
+                            <li class="L2"><a href="TeamList.aspx">球队信息设置</a></li>
+                            <li class="L1">球员信息</li>
+                            <li class="L2"><a href="PlayerList.aspx">球员信息管理</a></li>
+                        </ul>
+                    </td>
+                    <td style="vertical-align: top; background-color: #f1f1f1; margin: 0px; overflow: auto; width: 840px;">
+                        <div id="main">
+
+                            <asp:ContentPlaceHolder ID="cphMain" runat="server">
+                            </asp:ContentPlaceHolder>
+
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="height: 20px; background-color: #f1f1f1; border-top: 1px solid #D8D8D8; text-align: center">
+                        <div id="footer">
+                            Copyright@2018 NBA|HUPU--Zesen All rights reserved.
+                        </div>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+    </form>
+</body>
+</html>

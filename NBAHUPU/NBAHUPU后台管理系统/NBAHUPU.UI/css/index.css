@@ -1,0 +1,48 @@
+﻿/*后台Index.aspx页面的样式*/
+.nlist-1 {
+    line-height: 45px;
+    color: #444;
+    font-size: 12px;
+}
+
+    .nlist-1 h3 {
+        margin: 0;
+        padding: 0 0 0 20px;
+        font-size: 12px;
+        font-weight: bold;
+        color: #333;
+        line-height: 34px;
+        height: 34px;
+    }
+
+        .nlist-1 h3 i {
+            display: inline-block;
+            margin-right: 3px;
+            width: 14px;
+            height: 16px;
+            vertical-align: middle;
+            background: url(images/skin_icons.png) -280px -112px no-repeat;
+            overflow: hidden;
+        }
+
+    .nlist-1 ul {
+        padding: 0 0 0 20px;
+    }
+
+        .nlist-1 ul:after {
+            clear: both;
+            content: ".";
+            display: block;
+            height: 0;
+            visibility: hidden;
+        }
+
+        .nlist-1 ul li {
+            float: left;
+            margin-right: 10px;
+            width: 32%;
+            height: 32px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
